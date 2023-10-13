@@ -4,27 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prework Study Guide</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .section {
-            background-color: #f5f5f5;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Prework Study Guide</h1>
+    </div>
 
+    <div class="container">
         <div class="section">
             <h2>HTML</h2>
             <p>
@@ -56,6 +43,21 @@
                 <!-- Add your JavaScript-related notes and resources here -->
             </p>
         </div>
+        
+        <div id="suggestion">
+            <h2>Suggested Study Order</h2>
+            <p id="studyOrder">Start with HTML to build a strong foundation.</p>
+        </div>
     </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Your Company</p>
+    </div>
+    
+    <script>
+        // JavaScript code to provide the suggested study order
+        const studyOrder = document.getElementById("studyOrder");
+        studyOrder.textContent = "Start with HTML to build a strong foundation.";
+    </script>
 </body>
 </html>
